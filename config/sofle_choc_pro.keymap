@@ -41,11 +41,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp F1     &kp F2  &kp F3    &kp F4          &kp F5     &kp F6                             &kp F7     &kp F8     &kp F9     &kp F10   &kp F11  &kp F12
-&kp ESC    &kp J   &kp L     &kp U           &kp A      &kp Q      &kp W                              &kp B      &kp D      &kp G     &kp Z    &kp BSPC
-&kp TAB    &kp C   &kp R     &kp I           &kp E      &kp O      &kp M                              &kp N      &kp T      &kp L     &kp H    &kp UNDER
-&kp LSHFT  &kp V   &kp X     &kp LEFT_BRACE  &kp APOS   &kp SEMI   &kp C_MUTE  &kp C_PLAY  &kp P      &kp F      &kp COMMA  &kp Y     &kp K    &kp RSHFT
-                   &kp LGUI  &kp LALT        &kp LCTRL  &mo LOWER  &kp RET     &kp SPACE   &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
+&kp F1     &kp F2  &kp F3    &kp F4            &kp F5     &kp F6                             &kp F7     &kp F8     &kp F9     &kp F10   &kp F11  &kp F12
+&kp ESC    &kp J   &kp L     &kp U             &kp A      &kp Q      &kp W                              &kp B      &kp D      &kp G     &kp Z    &kp BSPC
+&kp TAB    &kp C   &kp R     &kp I             &kp E      &kp O      &kp M                              &kp N      &kp T      &kp S     &kp H    &kp UNDERSCORE
+&kp LSHFT  &kp V   &kp X     &kp LEFT_BRACKET  &kp APOS   &kp SEMI   &kp C_MUTE  &kp C_PLAY  &kp P      &kp F      &kp COMMA  &kp Y     &kp K    &kp RSHFT
+                   &kp LGUI  &kp LALT          &kp LCTRL  &mo LOWER  &kp RET     &kp SPACE   &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -62,11 +62,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none  &none      &none             &none                &none               &none                                &none   &none           &none           &none            &none    &none
-&none  &kp RA(Q)  &kp LS(GRAVE)     &kp LS(EQUAL)        &kp RA(BACKSLASH)   &kp EQUAL         &kp PG_UP                  &none           &kp UP_ARROW    &none            &kp INS  &none
-&none  &kp GRAVE  &kp LS(NUMBER_6)  &kp LS(RIGHT_BRACE)  &kp LS(NUMBER_2)    &kp LS(NUMBER_0)  &kp PG_DN                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DEL  &none
-&none  &none      &kp LS(MINUS)     &kp RA(RIGHT_BRACE)  &kp LS(UNDERSCORE)  &kp LS(SLASH)     &none      &none   &none   &none           &none           &none            &none    &none
-                  &trans            &trans               &trans              &trans            &trans     &trans  &trans  &trans          &trans          &trans
+&none  &none      &none             &none                  &none               &none                                &none   &none           &none           &none            &none    &none
+&none  &kp RA(Q)  &kp LS(GRAVE)     &kp LS(EQUAL)          &kp RA(BACKSLASH)   &kp EQUAL         &kp PG_UP                  &none           &kp UP_ARROW    &none            &kp INS  &none
+&none  &kp GRAVE  &kp LS(NUMBER_6)  &kp LS(RIGHT_BRACE)    &kp LS(NUMBER_2)    &kp LS(NUMBER_0)  &kp PG_DN                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DEL  &none
+&none  &none      &kp LS(NUMBER_3)  &kp RA(RIGHT_BRACKET)  &kp LS(UNDERSCORE)  &kp LS(SLASH)     &none      &none   &none   &none           &none           &none            &none    &none
+                  &trans            &trans                 &trans              &trans            &trans     &trans  &trans  &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -83,11 +83,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none  &none             &none                 &none             &none              &none                                       &none            &none             &none             &none                     &none               &none
-&none  &kp LS(NUMBER_7)  &kp NON_US_BACKSLASH  &kp RA(NUMBER_7)  &kp LS(NUMBER_8)   &kp RA(NUMBER_8)  &kp RA(NUMBER_9)                           &kp LS(NUMBER_9)  &kp RA(NUMBER_0)  &kp LS(NON_US_BACKSLASH)  &kp RA(UNDERSCORE)  &none
-&none  &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5      &kp NUMBER_6                               &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9              &kp NUMBER_0        &none
-&none  &kp NON_US_HASH   &kp LS(NUMBER_4)      &kp LS(NUMBER_1)  &kp RA(BACKSLASH)  &kp SLASH         &none             &none   &kp RIGHT_BRACE  &kp LS(NUMBER_5)  &kp PERIOD        &kp LS(PERIOD)            &kp LS(COMMA)       &none
-                         &trans                &trans            &trans             &trans            &trans            &trans  &trans           &trans            &trans            &trans
+&none  &none             &none                 &none             &none              &none                                       &none             &none             &none             &none               &none               &none
+&none  &kp LS(NUMBER_7)  &kp NON_US_BACKSLASH  &kp RA(NUMBER_7)  &kp LS(NUMBER_8)   &kp RA(NUMBER_8)  &kp RA(NUMBER_9)                            &kp LS(NUMBER_9)  &kp RA(NUMBER_0)  &kp RA(UNDERSCORE)  &kp RA(UNDERSCORE)  &none
+&none  &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5      &kp NUMBER_6                                &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9        &kp NUMBER_0        &none
+&none  &kp NON_US_HASH   &kp LS(NUMBER_4)      &kp LS(NUMBER_1)  &kp RA(BACKSLASH)  &kp SLASH         &none             &none   &kp LEFT_BRACKET  &kp LS(NUMBER_5)  &kp PERIOD        &kp PERIOD          &kp LS(COMMA)       &none
+                         &trans                &trans            &trans             &trans            &trans            &trans  &trans            &trans            &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -103,11 +103,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4                              &none   &none      &none  &none  &none            &kp PRINTSCREEN
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI   &rgb_ug RGB_EFF  &none                            &kp LC(B)  &none  &none  &none            &kp CAPSLOCK
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &kp LS(NUMBER_2)  &none            &kp H                            &kp J      &kp K  &kp L  &none            &kp KP_NUMLOCK
-&trans             &none            &none            &kp LEFT_ALT     &kp LEFT_CONTROL  &studio_unlock   &rgb_ug RGB_TOG  &none   &none   &none      &none  &none  &kp PAUSE_BREAK  &kp SCROLLLOCK
-                                    &none            &none            &none             &trans           &tog 5           &tog 4  &trans  &none      &none  &none
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4                              &none   &none             &none  &none  &none            &kp PRINTSCREEN
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI   &rgb_ug RGB_EFF  &none                            &kp LC(B)         &none  &none  &none            &kp CAPSLOCK
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &kp LS(NUMBER_2)  &none            &kp H                            &kp J             &kp K  &kp L  &none            &kp KP_NUMLOCK
+&kp LEFT_SHIFT     &none            &none            &kp LEFT_ALT     &kp LEFT_CONTROL  &studio_unlock   &rgb_ug RGB_TOG  &none   &none   &kp LS(NUMBER_5)  &none  &none  &kp PAUSE_BREAK  &kp SCROLLLOCK
+                                    &none            &none            &none             &trans           &tog 5           &tog 4  &trans  &none             &none  &none
             >;
         };
 
